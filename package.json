@@ -1,0 +1,7 @@
+{"name": "hub",
+"main":"hub.js",
+"dependencias": {
+"express": "latest",
+"body-parser": "latest"
+}
+}
