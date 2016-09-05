@@ -1,12 +1,14 @@
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
-var config = {port: 8080, ip: process.env.OPENSHIFT_NODEJS_IP};
+var config = {port: process.env.OPENSHIFT_NODEJS_PORT, ip: process.env.OPENSHIFT_NODEJS_IP};
 //const pug = require('pug');
 //const compiledFunction = pug.compileFile('index.pug');
 var bodyParser = require('body-parser');
+var compress = require('compression');
 var sourceData;
 
+app.use(compress())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 

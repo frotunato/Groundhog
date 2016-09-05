@@ -1,7 +1,17 @@
-{"name": "hub",
-"main":"hub.js",
-"dependencias": {
-"express": "latest",
-"body-parser": "latest"
-}
+{
+	"name": "STALKER",
+	"version": "1.0.0",
+	"main": "app.js",
+	"repository": {
+	  "type": "git",
+	  "url": "http://github.com/frotunato/Groundhog.git"
+	},
+	"dependencies": {
+		"name": "hub",
+		"main":"app.js",
+		"dependencias": {
+		"express": "latest",
+		"body-parser": "latest",
+		"compression": "latest"
+	}
 }
