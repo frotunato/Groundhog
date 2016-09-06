@@ -36,7 +36,7 @@ server.listen(config.port, config.ip, function () {
 
 function generateHTML (data) {
 	var date = new Date();
-	var list = '<div>Last updated: ' + date.toDateString() + ' ' + date.toTimeSTring() +'</div><ul>';
+	var list = '<div>Last updated: ' + date.toDateString() + ' ' + date.toTimeString() +'</div><ul>';
 	for (var i = data.length - 1; i >= 0; i--) {
 		list += '<li>' + data[i].name + '</li>';
 	}
